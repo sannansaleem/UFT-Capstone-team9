@@ -32,6 +32,17 @@ CREATE TABLE "Twitter_News_news_tweeters" (
      )
 );
 
+CREATE TABLE "ticker_data" (
+    "ticker" varchar   NOT NULL,
+    "sentimentScore" int   NOT NULL,
+    "positiveSentimentPercent" float   NOT NULL,
+    "neutralSentimentPercent" float   NOT NULL,
+    "negativeSentimentPercent" float   NOT NULL,
+    CONSTRAINT "pk_ticker_data" PRIMARY KEY (
+        "ticker"
+     )
+);
+
 ALTER TABLE "Twitter_News_News_tweets" ADD CONSTRAINT "fk_Twitter_News_News_tweets_username" FOREIGN KEY("username")
 REFERENCES "Twitter_News_news_tweeters" ("username");
 
