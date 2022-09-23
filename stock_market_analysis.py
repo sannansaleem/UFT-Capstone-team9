@@ -65,7 +65,7 @@ df = pd.DataFrame(data=data)
     #use twitterDEV to retrieve the last 'x' amount o tweets containing the ticker index taken from uesr
         #are we able to recall var reated   initially to store the index 
                 #check config.py file 
-    # need to conduc sentiment analsis, what API can we use to deermine and quantify the polarity of a tweet 
+    # need to conduc sentiment analsis, what API can we use to deermine and quantify the polarity of a tweet.
     
 
 
