@@ -54,6 +54,8 @@ df = pd.DataFrame(data=data)
         #close price
         #volume traded 
         #High
+        #setiment analysis variable
+        
     # to predict the close price such that x1, x2, x3, x4 are the pulled variables
         # y is the close price that is to be predicted (i.e. future close price)
         # B is the constant term  
@@ -74,7 +76,11 @@ df = pd.DataFrame(data=data)
 
 #time window for prediction?
 # as we are using data consolidated from previous year it makes sense to predict movents of stock price either over the next yer from the date of query or till the end of the current year
-  
+
+#Feature engineering 
+#as a sentiment analysis is to be performed, that will be an additional term used in the linear reg. to increase the robustness of our predictions
+    # the plan is to use sentiment analysis to determine the polarity of of tweets pulled using twitterDEV API such that we can created a weighted variable that will influence the final outcome of the prediction 
+    
 #-------------------------------------------------------------------------------------------------------
 #Data Preprocessing 
 #will ned to perprocess data 
