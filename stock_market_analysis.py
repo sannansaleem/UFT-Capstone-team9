@@ -39,16 +39,26 @@ df = pd.DataFrame(data=data)
 
 #-------------------------------------------------------------------------------------------------------
 #Modelling behviour 
-#possible use of calssification regression but  undersand logistic far ore clearly so lets try that for now 
 
 #model logic 
 #weve pulled the values for variables:
-      #open price
+        #open price
         #close price
-        #volume traded (do we even need this)
+        #volume traded 
         #High
 
-#find change in price: (close - open)/open
+#linear reg needs a forecast column to predict our close price - assume close   price is our forecasted output 
+# if the basic formula of a linear reg. is as follows: y = B0 + B1*x1 + B2*x2 + B3*x3 + m
+    #we plan to implement a ML algo that takes :
+        #open price
+        #close price
+        #volume traded 
+        #High
+    # to predict the close price such that x1, x2, x3, x4 are the pulled variables
+        # y is the close price that is to be predicted (i.e. future close price)
+        # B is the constant term  
+        # m is the error term 
+        
 #linear reg needs a forecast column to predict our close price - assume close   price is our forecasted output 
 
 #-------------------------------------------------------------------------------------------------------
