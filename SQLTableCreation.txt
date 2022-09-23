@@ -1,0 +1,18 @@
+-- Table: public.StockData
+
+-- DROP TABLE IF EXISTS public."StockData";
+
+CREATE TABLE IF NOT EXISTS public."StockData"
+(
+    "Stock" character varying(255)[] COLLATE pg_catalog."default" NOT NULL,
+    "Date" date NOT NULL,
+    "Close" money NOT NULL,
+    "Open" money NOT NULL,
+    "High" money NOT NULL,
+    "Volume" integer NOT NULL
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public."StockData"
+    OWNER to admin1;
