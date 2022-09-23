@@ -39,18 +39,39 @@ df = pd.DataFrame(data=data)
 
 #-------------------------------------------------------------------------------------------------------
 #Modelling behviour 
-#possible use of calssification regression but  undersand logistic far ore clearly so lets try that for now 
 
 #model logic 
 #weve pulled the values for variables:
-      #open price
+        #open price
         #close price
-        #volume traded (do we even need this)
+        #volume traded 
         #High
 
-#find change in price: (close - open)/open
 #linear reg needs a forecast column to predict our close price - assume close   price is our forecasted output 
+# if the basic formula of a linear reg. is as follows: y = B0 + B1*x1 + B2*x2 + B3*x3 + m
+    #we plan to implement a ML algo that takes :
+        #open price
+        #close price
+        #volume traded 
+        #High
+    # to predict the close price such that x1, x2, x3, x4 are the pulled variables
+        # y is the close price that is to be predicted (i.e. future close price)
+        # B is the constant term  
+        # m is the error term 
+        
+#why did we choose linear reg?
+#linear reg was chosen as we have continuous tabulated data will be pulled, over the time frame for a year, a daily instance of every variable is expected to be present 
+#we may possibly adjust to a non linear reg upon seeing plotted data points 
+    # this may optimize our model to increase accuracy of predictibility 
+        #ADDITIONAL OPTIMIZATION: the addition or removal of terms to increase the accuracy of predictability 
 
+#how will results be interpreted?
+#results will be interpreted using r^2 and adj. r^2 values to determine accuracy of prediction 
+
+#why did we chose the associated variables? 
+
+#time window for prediction?
+    #how did u train the model to predict that time?
 #-------------------------------------------------------------------------------------------------------
 #Data Preprocessing 
 #will ned to perprocess data 
@@ -65,7 +86,7 @@ df = pd.DataFrame(data=data)
     #use twitterDEV to retrieve the last 'x' amount o tweets containing the ticker index taken from uesr
         #are we able to recall var reated   initially to store the index 
                 #check config.py file 
-    # need to conduc sentiment analsis, what API can we use to deermine and quantify the polarity of a tweet 
+    # need to conduc sentiment analsis, what API can we use to deermine and quantify the polarity of a tweet.
     
 
 
