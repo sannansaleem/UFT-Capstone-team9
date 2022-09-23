@@ -69,9 +69,12 @@ df = pd.DataFrame(data=data)
 #results will be interpreted using r^2 and adj. r^2 values to determine accuracy of prediction 
 
 #why did we chose the associated variables? 
+#the associated variables are the most commonly talked about and used metrics when dealing with stock market data and predicting stock market data 
+    #furhter investigation will be done into more relavent variables that can be used but this will be a good base to launch off of 
 
 #time window for prediction?
-    #how did u train the model to predict that time?
+# as we are using data consolidated from previous year it makes sense to predict movents of stock price either over the next yer from the date of query or till the end of the current year
+  
 #-------------------------------------------------------------------------------------------------------
 #Data Preprocessing 
 #will ned to perprocess data 
