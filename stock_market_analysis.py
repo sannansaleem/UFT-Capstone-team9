@@ -59,8 +59,19 @@ df = pd.DataFrame(data=data)
         # B is the constant term  
         # m is the error term 
         
-#linear reg needs a forecast column to predict our close price - assume close   price is our forecasted output 
+#why did we choose linear reg?
+#linear reg was chosen as we have continuous tabulated data will be pulled, over the time frame for a year, a daily instance of every variable is expected to be present 
+#we may possibly adjust to a non linear reg upon seeing plotted data points 
+    # this may optimize our model to increase accuracy of predictibility 
+        #ADDITIONAL OPTIMIZATION: the addition or removal of terms to increase the accuracy of predictability 
 
+#how will results be interpreted?
+#results will be interpreted using r^2 and adj. r^2 values to determine accuracy of prediction 
+
+#why did we chose the associated variables? 
+
+#time window for prediction?
+    #how did u train the model to predict that time?
 #-------------------------------------------------------------------------------------------------------
 #Data Preprocessing 
 #will ned to perprocess data 
