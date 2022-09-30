@@ -29,6 +29,15 @@ Our data base cnfiguration has takes steps as subsequently;
 - Attempted manual import of data into tables. Did not work as expected.
 	- Determined tables value types causing error for import.
 
+
+## Comparison and Analysis of  green energy stocks - 2017 vs 2018
+(Figure 1) | (Figure 2)
+:------------------------------------------:| :-------------------------------------:	
+![](Database Configuration/Active RDS Instace.png) | ![](Database Configuration/RDS Database Instace-TickerDB.png)
+Active RDS Instace.png.  | RDS Database Instace-TickerDB.
+
+### <ins>Annual Returns (%)</ins>
+
 The stock market data is collected using yfinance API and tweets are fetched from twitter using GetOldTweets API. In this step the preprocessing of the tweets such as removing stop words, hyperlink and other steps are carried out.
 
 
