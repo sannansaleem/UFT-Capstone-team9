@@ -55,7 +55,7 @@ Notes/Things to do:
 	Arache Spark Error
 
 
-### <ins>Data Preprocessig(%)</ins>
+### <ins>Data Preprocessig</ins>
 
 The stock market data is collected using yfinance API and tweets are fetched from twitter using GetOldTweets API. In this step the preprocessing of the tweets such as removing stop words, hyperlink and other steps are carried out.
 
@@ -71,7 +71,7 @@ Sentiment Analysis: Every tweet is given a sentiment score which shows if the tw
 
 We used following for the sentiment analysis and data preprocssing;
 
-#### <ins>import dependencies(%)</ins>
+#### <ins>import dependencies</ins>
 import pandas as pd
 import numpy as np
 import tweepy
