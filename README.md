@@ -31,28 +31,24 @@ Our data base cnfiguration has takes steps as subsequently;
 	
 (Figure 1) 
 :------------------------------------------:|	
-	 ![](Database Configuration/Sample Data.png)
-	 Sample Data
+![](https://github.com/sannansaleem/capstone/blob/main/Database%20Configuration/Sample%20Data.png)
+Sample Data
 
 (Figure 1) | (Figure 2)
 :------------------------------------------:| :-------------------------------------:	
-![](Database Configuration/Active RDS Instace.png) | ![](Database Configuration/RDS Database Instace-TickerDB.png)
+![](https://github.com/sannansaleem/capstone/blob/main/Database%20Configuration/Active%20RDS%20Instance.png) | ![](https://github.com/sannansaleem/capstone/blob/main/Database%20Configuration/RDS%20Database%20Instance-TickerDB%20.png)
 Active RDS Instace.  | RDS Database Instace-TickerDB..
 
 (Figure 3) 
 :------------------------------------------:|	
-	 ![](Images/TwitterERD.png)
-	 Database ERD
+![](https://github.com/sannansaleem/capstone/blob/chris_anderson/Images/QuickDBD-export%20(4).png)
+Database ERD
 
-Notes/Things to do:
-
-- Need to troubleshoot error for Apache Spark.
-- Need to classify column variable correctly after data import.
 
 (Figure 4) 
 :------------------------------------------:|	
-	 ![](Apache Spark-pySparkETL ErrorT.png)
-	Arache Spark Error
+![](https://github.com/sannansaleem/capstone/blob/main/Apache%20Spark-pySparkETL%20Error.png)
+Arache Spark Error
 
 
 ### <ins>Annual Returns (%)</ins>
