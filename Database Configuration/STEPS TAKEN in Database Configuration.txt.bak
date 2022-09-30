@@ -18,6 +18,8 @@ Changes made:
 - Troubleshooted error for Apache Spark.
 - Successful inteegration of PySpark ETL. 
 - Connection to Database made. 
-- Need to classify column variables correctly after data import. 
+- Classified column variables correctly after data import. 
+- Added Tables into Database. 
+
 
 
