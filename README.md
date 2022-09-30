@@ -31,8 +31,7 @@ Our data base cnfiguration has takes steps as subsequently;
 
 
 ## Comparison and Analysis of  green energy stocks - 2017 vs 2018
-(Figure 1) | (Figure 2)
-:------------------------------------------:| :-------------------------------------:	
+	
 ![](Database%20Configuration/Active%20RDS%20Instace.png) 
 Active RDS Instace.png.  | RDS Database Instace-TickerDB.
 
