@@ -1,10 +1,8 @@
-# capstonec
-##Stock Market Analysis
+# capstone
+## Stock Market Analysis
 ## Project Overview 
 ### <ins>Background</ins> 
 By utilizing twitter sentiment analysis and linear regression, we tend to able to analyze data provided on twitter to forecast stock market closing prices.
-
-For this purpose, we are collectinng and normalizing stock data for the the database so it can be used in our machine learning mdodel. in order to do this, we are obtaining data microdosft excel's stock history function, cleaning the data in python using numpy and pandas and outputting it as csv files, and using postgresql to create tables for cleane CVSs for or AWS data base.
 
 In this project, we have applied sentiment analysis and statistical machine learning models. These models are used to envision the correlation between the tweets which are extracted from twitter. We have performed sentiment analysis of the twitter data based on a whole day as well as based on an hourly basis to analyze the effect it has on stock market prediction. 
 
@@ -12,7 +10,33 @@ In this project, we have applied sentiment analysis and statistical machine lear
 
 ### Data Collection
 
+For this purpose, we are collectinng and normalizing stock data for the the database so it can be used in our machine learning mdodel. in order to do this, we are obtaining data microdosft excel's stock history function, cleaning the data in python using numpy and pandas and outputting it as csv files, and using postgresql to create tables for cleane CVSs for or AWS data base.  
+Our data base cnfiguration has takes steps as subsequently;
+
+#### <ins>Base Database Configuration</ins>
+
+-Created AWS Relational Database instance.
+- Configured inbound rules for connection.
+- Confirmed pgSQL (pgAdmin) connection to the server. 
+- Created S3 buckets to hold data. 
+- Configured buckets to be publicly accessible.
+- Uploaded data to buckets.
+- Created Tables within Database. 
+- Attempted to classify Record/Variables for Stock Data.
+- Installed Apache Spark & PySpark. 
+- Attempted to extract data from S3 buckets in Amazon
+- Came across errors. 
+- Attempted manual import of data into tables. Did not work as expected.
+	- Determined tables value types causing error for import.
+
 The stock market data is collected using yfinance API and tweets are fetched from twitter using GetOldTweets API. In this step the preprocessing of the tweets such as removing stop words, hyperlink and other steps are carried out.
+
+
+
+
+
+
+
 Sentiment Analysis: The sentiment analysis of the tweet is carried out using VADER. Here each tweet is given a sentiment score which determines if the tweet is positive, negative or neutral.
 Processing: The rows which have missing values such as price values are further processed. The data along with the sentiment scores is divided into train and test data and is fed to the model.
 Applying Regression Models: To predict stock Market prices, we have used Random Forest and Support vector regression models in this project. We will be then using RMSE scores to validate the efficiency of our models and to analyze which model works better for the used dataset.
