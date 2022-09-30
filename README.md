@@ -28,12 +28,32 @@ Our data base cnfiguration has takes steps as subsequently;
 - Came across errors. 
 - Attempted manual import of data into tables. Did not work as expected.
 	- Determined tables value types causing error for import.
-
-
-## Comparison and Analysis of  green energy stocks - 2017 vs 2018
 	
-![](DatabaseConfiguration/ActiveRDSInstace.png) 
-Active RDS Instace.png.  | RDS Database Instace-TickerDB.
+(Figure 1) 
+:------------------------------------------:|	
+	 ![](Database Configuration/Sample Data.png)
+	 Sample Data
+
+(Figure 1) | (Figure 2)
+:------------------------------------------:| :-------------------------------------:	
+![](Database Configuration/Active RDS Instace.png) | ![](Database Configuration/RDS Database Instace-TickerDB.png)
+Active RDS Instace.  | RDS Database Instace-TickerDB..
+
+(Figure 3) 
+:------------------------------------------:|	
+	 ![](Images/TwitterERD.png)
+	 Database ERD
+
+Notes/Things to do:
+
+- Need to troubleshoot error for Apache Spark.
+- Need to classify column variable correctly after data import.
+
+(Figure 4) 
+:------------------------------------------:|	
+	 ![](Apache Spark-pySparkETL ErrorT.png)
+	Arache Spark Error
+
 
 ### <ins>Annual Returns (%)</ins>
 
