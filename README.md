@@ -224,7 +224,7 @@ will need to perprocess data
 
 split into X-train/test and Y-Train/Test where X-values will be OG close price?
 
-# Split data into testing and training sets
+#Split data into testing and training sets
 X_train, X_test, y_train, y_test = train_test_split(df[['Close']], df[['EMA_10']], test_size=.2)
 
 
