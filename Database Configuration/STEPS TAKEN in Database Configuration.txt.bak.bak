@@ -14,10 +14,8 @@ Base Database Configuration:
 - Attempted manual import of data into tables. Did not work as expected.
 	- Determined tables value types causing error for import.
 
-Changes made: 
-- Troubleshooted error for Apache Spark.
-- Successful inteegration of PySpark ETL. 
-- Connection to Database made. 
+Notes/Things to to do: 
+- Need to troubleshoot error for Apache Spark.
 - Need to classify column variables correctly after data import. 
 
 
