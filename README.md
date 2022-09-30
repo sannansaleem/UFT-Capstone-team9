@@ -31,43 +31,45 @@ Our data base cnfiguration has takes steps as subsequently;
 	
 (Figure 1) 
 :------------------------------------------:|	
-![](https://github.com/sannansaleem/capstone/blob/main/Database%20Configuration/Sample%20Data.png)
-Sample Data
+	 ![](Database Configuration/Sample Data.png)
+	 Sample Data
 
-(Figure 1) | (Figure 2)
+(Figure 2) | (Figure 3)
 :------------------------------------------:| :-------------------------------------:	
-![](https://github.com/sannansaleem/capstone/blob/main/Database%20Configuration/Active%20RDS%20Instance.png) | ![](https://github.com/sannansaleem/capstone/blob/main/Database%20Configuration/RDS%20Database%20Instance-TickerDB%20.png)
+![](Database Configuration/Active RDS Instace.png) | ![](Database Configuration/RDS Database Instace-TickerDB.png)
 Active RDS Instace.  | RDS Database Instace-TickerDB..
-
-(Figure 3) 
-:------------------------------------------:|	
-![](https://github.com/sannansaleem/capstone/blob/chris_anderson/Images/QuickDBD-export%20(4).png)
-Database ERD
-
 
 (Figure 4) 
 :------------------------------------------:|	
-![](https://github.com/sannansaleem/capstone/blob/main/Apache%20Spark-pySparkETL%20Error.png)
-Arache Spark Error
+	 ![](Images/TwitterERD.png)
+	 Database ERD
+
+Notes/Things to do:
+
+- Need to troubleshoot error for Apache Spark.
+- Need to classify column variable correctly after data import.
+
+(Figure 5) 
+:------------------------------------------:|	
+	 ![](Apache Spark-pySparkETL ErrorT.png)
+	Arache Spark Error
 
 
 ### <ins>Annual Returns (%)</ins>
 
 The stock market data is collected using yfinance API and tweets are fetched from twitter using GetOldTweets API. In this step the preprocessing of the tweets such as removing stop words, hyperlink and other steps are carried out.
 
+Processing: 
 
 
+Stock prices data collected  lacks weekends and public holidays when the market is closed. Stock data 
+follows a concave function. Therefore, if the stock in a day is x and the next  is y with some missing. The first missing value is determined to be (y+x)/2 and the same metodology is used to determine the missing values.
 
+Tweets contain acronyms, unnecessary data like pictures and URL’s. to do processing of preliminary tweets we utilized Tokenization.
 
+Tokenization: Tweets are broken down into words based on the space and unrelated symbols. We form a list of individual words for each tweet.
 
-
-Sentiment Analysis: The sentiment analysis of the tweet is carried out using VADER. Here each tweet is given a sentiment score which determines if the tweet is positive, negative or neutral.
-Processing: The rows which have missing values such as price values are further processed. The data along with the sentiment scores is divided into train and test data and is fed to the model.
-Applying Regression Models: To predict stock Market prices, we have used Random Forest and Support vector regression models in this project. We will be then using RMSE scores to validate the efficiency of our models and to analyze which model works better for the used dataset.
-I enjoyed coding in VBA immensely, owing to the ease in transfer of basic to advanced repetitive tasks. I was and am able to come back to the original or updated file in order to improve it as per my convenience at any point in time. Since, it is a standalone application - I have not had to further install any libraries / packages or applications to either update current code or run further data analysis, and it has proceeded to integrate effectively with Microsoft applications.
-
-For your reference, within the VBA_Challenge file you can find the base code (Module 2) and the refactored code (Module 3) upon opening MIcrosoft Visual Basic Editor (Option + fn + F11 [mac users])
-
+Sentiment Analysis: The sentiment analysis of the tweets is performed using VADER. Every tweet is given a sentiment score which shows if the tweet is positive, negative or neutral.
 
 
 The project over view is to be able to obtain prediction of the stock markets's closing price using past closing prices attained from social media platforms, specifically twitter. By using twitter sentiment analysis and linear regression.
