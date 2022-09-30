@@ -81,3 +81,12 @@ from nltk.sentiment.vader import SentimentIntensityAnalyzer
 import pymysql
 from sqlalchemy import create_engine
 
+#### <ins>Storing and cleaning tweet text/ins>
+
+We have made 4 lists consisting tweetList, poslList, negList and neuList and apended the data accordingly and calculated the sentiment score of each of them. the lengths of each List was devided by its repective twetlist and the result was presented as following.
+	
+​positive sentiment: 32.93%
+negative sentiment: 27.54%
+neutral sentiment: 39.52%
+Overall sentiment is neutral
+
