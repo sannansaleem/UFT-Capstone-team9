@@ -15,7 +15,7 @@ Our data base cnfiguration has takes steps as subsequently;
 
 #### <ins>Base Database Configuration</ins>
 
--Created AWS Relational Database instance.
+- Created AWS Relational Database instance.
 - Configured inbound rules for connection.
 - Confirmed pgSQL (pgAdmin) connection to the server. 
 - Created S3 buckets to hold data. 
