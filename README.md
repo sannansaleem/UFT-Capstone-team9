@@ -31,18 +31,29 @@ Our data base cnfiguration has takes steps as subsequently;
 	
 (Figure 1) 
 :------------------------------------------:|	
-![](https://github.com/sannansaleem/capstone/blob/main/Database%20Configuration/Tables%20within%20Database.png)
-3 Tables Created
+	 ![](Database Configuration/Sample Data.png)
+	 Sample Data
 
 (Figure 2) | (Figure 3)
 :------------------------------------------:| :-------------------------------------:	
-![](https://github.com/sannansaleem/capstone/blob/main/Database%20Configuration/Active%20RDS%20Instance.png) | ![](https://github.com/sannansaleem/capstone/blob/main/Database%20Configuration/Successful%20integration%20of%20PySpark%20with%20Database.png)
-Active RDS Instace.  | Successful Integration of Pyspark With Database
+![](Database Configuration/Active RDS Instace.png) | ![](Database Configuration/RDS Database Instace-TickerDB.png)
+Active RDS Instace.  | RDS Database Instace-TickerDB..
 
 (Figure 4) 
 :------------------------------------------:|	
-![](https://github.com/sannansaleem/capstone/blob/chris_anderson/Images/QuickDBD-export%20(4).png)
-Database ERD
+	 ![](Images/TwitterERD.png)
+	 Database ERD
+
+Notes/Things to do:
+
+- Need to troubleshoot error for Apache Spark.
+- Need to classify column variable correctly after data import.
+
+(Figure 5) 
+:------------------------------------------:|	
+	 ![](Apache Spark-pySparkETL ErrorT.png)
+	Arache Spark Error
+
 
 ### <ins>Data Preprocessig</ins>
 
@@ -180,6 +191,10 @@ ADDITIONAL OPTIMIZATION: the addition or removal of terms to increase the accura
 
 results will be interpreted using r^2 and adj. r^2 values to determine accuracy of prediction
 
+##### the Result :
+Model Coefficients: [[0.85468578]]
+Mean Absolute Error: 3.5018774676915005
+Coefficient of Determination: 0.883196544620627
 
 
 #### Why did we chose the associated variables?
@@ -205,11 +220,13 @@ the plan is to use sentiment analysis to determine the polarity of of tweets pul
 
 #### Data Preprocessing
 
-will ned to perprocess data
+will need to perprocess data
 
 split into X-train/test and Y-Train/Test where X-values will be OG close price?
 
-cross valdiate sets
+# Split data into testing and training sets
+X_train, X_test, y_train, y_test = train_test_split(df[['Close']], df[['EMA_10']], test_size=.2)
+
 
 
 
@@ -228,3 +245,4 @@ are we able to recall var reated   initially to store the index
 
 #### check config.py file
 
+	
