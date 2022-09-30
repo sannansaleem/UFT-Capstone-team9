@@ -31,29 +31,18 @@ Our data base cnfiguration has takes steps as subsequently;
 	
 (Figure 1) 
 :------------------------------------------:|	
-	 ![](Database Configuration/Sample Data.png)
-	 Sample Data
+![](https://github.com/sannansaleem/capstone/blob/main/Database%20Configuration/Tables%20within%20Database.png)
+3 Tables Created
 
 (Figure 2) | (Figure 3)
 :------------------------------------------:| :-------------------------------------:	
-![](Database Configuration/Active RDS Instace.png) | ![](Database Configuration/RDS Database Instace-TickerDB.png)
-Active RDS Instace.  | RDS Database Instace-TickerDB..
+![](https://github.com/sannansaleem/capstone/blob/main/Database%20Configuration/Active%20RDS%20Instance.png) | ![](https://github.com/sannansaleem/capstone/blob/main/Database%20Configuration/Successful%20integration%20of%20PySpark%20with%20Database.png)
+Active RDS Instace.  | Successful Integration of Pyspark With Database
 
 (Figure 4) 
 :------------------------------------------:|	
-	 ![](Images/TwitterERD.png)
-	 Database ERD
-
-Notes/Things to do:
-
-- Need to troubleshoot error for Apache Spark.
-- Need to classify column variable correctly after data import.
-
-(Figure 5) 
-:------------------------------------------:|	
-	 ![](Apache Spark-pySparkETL ErrorT.png)
-	Arache Spark Error
-
+![](https://github.com/sannansaleem/capstone/blob/chris_anderson/Images/QuickDBD-export%20(4).png)
+Database ERD
 
 ### <ins>Data Preprocessig</ins>
 
