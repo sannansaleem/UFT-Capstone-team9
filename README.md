@@ -13,20 +13,20 @@ Data to be predicted using logistic reg:
 
    -close price
 
-#systems and installs in use or planed fr production (add to list aswe move):
-            #Pthon
-            #pandas
-            #numpy
-            #tweepy
-            #ix_yahoo_finance
-            #scikit_learn
-            #maplotlib
+# systems and installs in use or planed fr production (add to list aswe move):
+            Pthon
+            pandas
+            numpy
+            tweepy
+            ix_yahoo_finance
+            scikit_learn
+            maplotlib
 
 
-#Machne Learning Model 
+# Machne Learning Model 
 
-#model logic 
-##Description of preliminary data
+# model logic 
+## Description of preliminary data
 weve pulled the values for variables:
         open price
         close price
@@ -45,29 +45,29 @@ to predict the close price such that x1, x2 are the previous years close data an
          - B is the constant term  
          - m is the error term 
         
-##why did we choose linear reg?
+## why did we choose linear reg?
 linear reg was chosen as we have continuous tabulated data will be pulled, over the time frame for a year, a daily instance of every variable is expected to be present 
 
 we may possibly adjust to a non linear reg upon seeing plotted data points 
      this may optimize our model to increase accuracy of predictibility 
         ADDITIONAL OPTIMIZATION: the addition or removal of terms to increase the accuracy of predictability 
 
-##how will results be interpreted?
+## how will results be interpreted?
 results will be interpreted using r^2 and adj. r^2 values to determine accuracy of prediction 
 
-##why did we chose the associated variables? 
+## why did we chose the associated variables? 
 the associated variables are the most commonly talked about and used metrics when dealing with stock market data and predicting stock market data 
     furhter investigation will be done into more relavent variables that can be used but this will be a good base to launch off of 
 
-##time window for prediction?
+## time window for prediction?
 as we are using data consolidated from previous year it makes sense to predict movents of stock price either over the next yer from the date of query or till the end of the current year
 
-##Feature engineering 
+## Feature engineering 
 as a sentiment analysis is to be performed, that will be an additional term used in the linear reg. to increase the robustness of our predictions
 the plan is to use sentiment analysis to determine the polarity of of tweets pulled using twitterDEV API such that we can created a weighted variable that will influence the final outcome of the prediction 
 
 
-##Description of how data was split into training and testing sets ✓ Explanation of model choice, including limitations and benefits
+## Description of how data was split into training and testing sets ✓ Explanation of model choice, including limitations and benefits
 
 Data was split in to training and testing sets at a ratio of 20%/80% to begin with this might be revisited after consulting with Ken
 
@@ -80,7 +80,7 @@ As we are utilizing Time Series data this is often a problem since our observed 
 In order to combath this issue, the exponential moving average was utilized but further more, a couple more indexes acan be used  to which we are researching into e.g. technical indicators such moving averages (SMA, MACD), the Relative Strength Index (RSI), Bollinger Bands (BBANDS)
 
 -------------------------------------------------------------------------------------------------------
-#Data Preprocessing 
+# Data Preprocessing 
 
 will ned to perprocess data 
     split into X-train/test and Y-Train/Test where X-values will be OG close price? 
