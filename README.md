@@ -24,36 +24,25 @@ Our data base cnfiguration has takes steps as subsequently;
 - Created Tables within Database. 
 - Attempted to classify Record/Variables for Stock Data.
 - Installed Apache Spark & PySpark. 
-- Attempted to extract data from S3 buckets in Amazon
+- Extracted data from S3 buckets in Amazon
 - Came across errors. 
 - Attempted manual import of data into tables. Did not work as expected.
 	- Determined tables value types causing error for import.
 	
 (Figure 1) 
 :------------------------------------------:|	
-	 ![](Database Configuration/Sample Data.png)
-	 Sample Data
+![](https://github.com/sannansaleem/capstone/blob/main/Database%20Configuration/Tables%20within%20Database.png)
+SQL Tables
 
 (Figure 2) | (Figure 3)
 :------------------------------------------:| :-------------------------------------:	
-![](Database Configuration/Active RDS Instace.png) | ![](Database Configuration/RDS Database Instace-TickerDB.png)
+![](https://github.com/sannansaleem/capstone/blob/main/Database%20Configuration/Active%20RDS%20Instance.png) | ![](https://github.com/sannansaleem/capstone/blob/main/Database%20Configuration/RDS%20Database%20Instance-TickerDB%20.png)
 Active RDS Instace.  | RDS Database Instace-TickerDB..
 
 (Figure 4) 
 :------------------------------------------:|	
-	 ![](Images/TwitterERD.png)
-	 Database ERD
-
-Notes/Things to do:
-
-- Need to troubleshoot error for Apache Spark.
-- Need to classify column variable correctly after data import.
-
-(Figure 5) 
-:------------------------------------------:|	
-	 ![](Apache Spark-pySparkETL ErrorT.png)
-	Arache Spark Error
-
+![](https://github.com/sannansaleem/capstone/blob/main/Images/TwitterERD.png)
+Database ERD
 
 ### <ins>Data Preprocessig</ins>
 
