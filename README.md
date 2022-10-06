@@ -234,4 +234,5 @@ are we able to recall var reated   initially to store the index
 
 #### check config.py file
 
-	
+## Dashboard
+https://public.tableau.com/app/profile/chris5384/viz/CapstoneDashboard_16650973748950/Dashboard1?publish=yes
