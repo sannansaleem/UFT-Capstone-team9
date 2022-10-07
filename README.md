@@ -209,6 +209,14 @@ PLEASE REFER to Machine_Learning-FBProphet.ipynb
 :------------------------------------------:|	
 ![image](https://user-images.githubusercontent.com/104602949/194448156-f39ab25e-7c15-49fb-acda-0784d3d70534.png)
 
+(Figure y_PredictionForecast(df1))
+:------------------------------------------:|	
+![image](https://user-images.githubusercontent.com/104602949/194448463-1b58b7e1-6196-4c09-a7ea-46aa627efc59.png)
+
+(Figure y_ForecastPlot(df1))
+:------------------------------------------:|	
+![image](https://user-images.githubusercontent.com/104602949/194448552-60cedd73-db5b-4b58-9e33-951e91daa361.png)
+
 
 
 
