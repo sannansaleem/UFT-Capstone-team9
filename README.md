@@ -205,6 +205,8 @@ NOTE:
 
 PLEASE REFER to Machine_Learning-FBProphet.ipynb
 
+Figure y_Tables(df)-DataFrame
+![image](https://user-images.githubusercontent.com/104602949/194448156-f39ab25e-7c15-49fb-acda-0784d3d70534.png)
 
 
 #### check config.py file
