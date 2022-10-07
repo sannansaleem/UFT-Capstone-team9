@@ -217,6 +217,9 @@ PLEASE REFER to Machine_Learning-FBProphet.ipynb
 :------------------------------------------:|	
 ![image](https://user-images.githubusercontent.com/104602949/194448552-60cedd73-db5b-4b58-9e33-951e91daa361.png)
 
+(Figure y_ForecastTrend(df1) -Weekly)
+:------------------------------------------:|	
+![image](https://user-images.githubusercontent.com/104602949/194448691-99e67c35-93cc-460d-8191-e8c0cc4bb24b.png)
 
 
 
