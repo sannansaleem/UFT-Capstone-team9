@@ -1,0 +1,5 @@
+Data Exploration Phase
+-filtered stock data down to one symbol, AAPL
+-created a line graph to show close prices over the year
+-added an exponential moving average with a length of ten days 
+-removed nan values from the newly added EMA
