@@ -198,6 +198,14 @@ X_train, X_test, y_train, y_test = train_test_split(df[['Close']], df[['EMA_10']
 
 
 
+NOTE:
+~Added changes 10\06\22
+- Difficulty with running ARIMA modeling to predict the outcomes.
+- Added in Facebook Prophet Library to formulate a predictive algorithm.
+
+PLEASE REFER to Machine_Learning-FBProphet.ipynb
+
+
 
 #### check config.py file
 
