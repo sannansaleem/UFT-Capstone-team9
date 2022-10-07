@@ -2,9 +2,9 @@
 ## Stock Market Analysis
 ## Project Overview 
 ### <ins>Background</ins> 
-By utilizing twitter sentiment analysis and linear regression, we tend to able to analyze data provided on twitter to forecast stock market closing prices.
+By using linear regression, we tend to able to analyze data to forecast stock market closing prices based on past closing prices.
 
-In this project, we have applied sentiment analysis and statistical machine learning models. These models are used to envision the correlation between the tweets which are extracted from twitter. We have performed sentiment analysis of the twitter data based on a whole day as well as based on an hourly basis to analyze the effect it has on stock market prediction. 
+In this project, we have applied statistical machine learning models to envision the trends in stock closing prices.
 
 ## An overview of the process flow of our project is as follows:
 
@@ -52,35 +52,14 @@ The stock market data is collected using yfinance API and tweets are fetched fro
 Stock prices data collected  lacks weekends and public holidays when the market is closed. Stock data 
 follows a concave function. Therefore, if the stock in a day is x and the next  is y with some missing. The first missing value is determined to be (y+x)/2 and the same metodology is used to determine the missing values.
 
-Tweets contain acronyms, unnecessary data like pictures and URL’s. to do processing of preliminary tweets we utilized Tokenization.
 
-Tokenization: Tweets are broken down into words based on the space and unrelated symbols. We form a list of individual words for each tweet.
-
-Sentiment Analysis: Every tweet is given a sentiment score which shows if the tweet is positive, negative or neutral.
-
-We used following for the sentiment analysis and data preprocssing;
+We used following for data preprocssing;
 
 #### <ins>import dependencies</ins>
 import pandas as pd
 import numpy as np
-import tweepy
-import nltk
-from textblob import TextBlob
-from nltk.sentiment.vader import SentimentIntensityAnalyzer
 import pymysql
-from sqlalchemy import create_engine
-
-#### <ins>Storing and cleaning tweet text/ins>
-
-We have made 4 lists consisting tweetList, poslList, negList and neuList and apended the data accordingly and calculated the sentiment score of each of them. the lengths of each List was devided by its repective twetlist and the result was presented as following.
-	
-​positive sentiment: 32.93%
-negative sentiment: 27.54%
-neutral sentiment: 39.52%
-Overall sentiment is neutral
-
-
-	
+from sqlalchemy import create_engine	
 	
 	
 	
@@ -202,10 +181,6 @@ furhter investigation will be done into more relavent variables that can be used
 
 #### Feature engineering
 
-as a sentiment analysis is to be performed, that will be an additional term used in the linear reg. to increase the robustness of our predictions
-
-the plan is to use sentiment analysis to determine the polarity of of tweets pulled using twitterDEV API such that we can created a weighted variable that will influence the final outcome of the prediction
-
 
 #### Data Preprocessing
 
@@ -223,14 +198,6 @@ X_train, X_test, y_train, y_test = train_test_split(df[['Close']], df[['EMA_10']
 
 
 
-
-
-
-#### Twitter senitment anlysis
-
-use twitterDEV to retrieve the last 'x' amount o tweets containing the ticker index taken from uesr
-
-are we able to recall var reated   initially to store the index
 
 #### check config.py file
 
