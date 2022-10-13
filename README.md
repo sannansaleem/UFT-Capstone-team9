@@ -1,16 +1,17 @@
 # capstone
-## Stock Market Analysis
+## Stock Market FOrecast
 ## Project Overview 
 ### <ins>Background</ins> 
-By using linear regression, we tend to able to analyze data to forecast stock market closing prices based on past closing prices.
 
-In this project, we have applied statistical machine learning models to envision the trends in stock closing prices.
+The following project aims to use stock market data previously collected that was available using microsoft excelt services and compiled togeter as a data frame over the past year from when the project was initially founded. Using facebooks' Prpphet alrorythm developped in python that utilizes an additive regression model, we aim to predict the movement of stocks of close price 182 days in to the future. 
+
+The purpose of the project is to be able to provide traders with insightful information based on past seasonal trends so that data informed decisions can be made and carried out in an environment as unstable as the stock market.
 
 ## An overview of the process flow of our project is as follows:
 
 ### Data Collection
 
-For this purpose, we are collectinng and normalizing stock data for the the database so it can be used in our machine learning mdodel. in order to do this, we are obtaining data microdosft excel's stock history function, cleaning the data in python using numpy and pandas and outputting it as csv files, and using postgresql to create tables for cleane CVSs for or AWS data base.  
+For this purpose, we are collectinng and normalizing stock data for the the database so it can be used in our machine learning mdodel. in order to do this, we are obtaining data microsoft excel's stock history function, cleaning the data in python using numpy and pandas and outputting it as csv files, and using postgresql to create tables for cleane CVSs for or AWS data base.  
 Our data base cnfiguration has takes steps as subsequently;
 
 #### <ins>Base Database Configuration</ins>
@@ -27,7 +28,7 @@ Our data base cnfiguration has takes steps as subsequently;
 - Extracted data from S3 buckets in Amazon
 - Came across errors. 
 - Attempted manual import of data into tables. Did not work as expected.
-	- Determined tables value types causing error for import.
+- Determined tables value types causing error for import.
 	
 (Figure 1) 
 :------------------------------------------:|	
