@@ -59,7 +59,7 @@ Database ERD
 
 </p>
 
-### <ins>Data Preprocessig</ins>
+### <ins>Data Preprocessing</ins>
 
 Stock market data is collected from microsoft excel's stockhistory function, saved as a csv, and read into a notebook as a pandas dataframe to be formatted for importing as sql tables.
 The stock market data did not have any missing values to drop, but some columns did need to have their types coerced to be uploaded to the sql database.
