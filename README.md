@@ -112,3 +112,5 @@ PLEASE REFER to Machine_Learning-FBProphet.ipynb
 
 ## Dashboard
 https://public.tableau.com/app/profile/chris5384/viz/CapstoneDashboard_16650973748950/Dashboard1?publish=yes
+## Presentation Rehearsal
+https://drive.google.com/file/d/16yV1xF0P6DFMSTc-vQ-j6_R6OWiwow-9/view?usp=sharing
