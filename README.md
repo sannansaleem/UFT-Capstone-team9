@@ -61,19 +61,13 @@ Database ERD
 
 ### <ins>Data Preprocessig</ins>
 
-The stock market data is collected using yfinance API and tweets are fetched from twitter using GetOldTweets API. In this step the preprocessing of the tweets such as removing stop words, hyperlink and other steps are carried out.
+Stock market data is collected from microsoft excel's stockhistory function, saved as a csv, and read into a notebook as a pandas dataframe to be formatted for importing as sql tables.
+The stock market data did not have any missing values to drop, but some columns did need to have their types coerced to be uploaded to the sql database.
+The stock market data has been normalized into two tables, splitting dollar values like open, close, high, and low, from the volume traded.
+Normalized data was imported into sql tables and into aws.
 
-
-Stock prices data collected  lacks weekends and public holidays when the market is closed. Stock data 
-follows a concave function. Therefore, if the stock in a day is x and the next  is y with some missing. The first missing value is determined to be (y+x)/2 and the same metodology is used to determine the missing values.
-
-
-
-<ins>import dependencies</ins>
-import pandas as pd
-import numpy as np
-import pymysql
-from sqlalchemy import create_engine	
+As Facebook Prophet automatically selects changepoints to perform its analysis, and additive regression models like facebook prophet use a one-dimensional smoother and backfitting, there was no need to split data into training and testing sets.
+One stock is chosen for analysis, in this case AAPL, and additional preprocessing is done to format the data for the facebook prophet model by creating a new dataframe that includes only the dates and close prices for the last year.	
 	
 	
 	
