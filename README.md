@@ -82,8 +82,8 @@ from sqlalchemy import create_engine
 	We used following to create a model to predict the stcok prices;
 
 For the modeling phase of the forecasting process, we found a limited number of tools available. A few forecasting packages in R were avaible for use to us specifically 
-	-CausalImpact 
-	-AnomalyDetection 
+	- CausalImpact 
+	- AnomalyDetection 
 
 but facebook Prophet was used as a replacement for the forecast package because of two main advantages it offered us:
 
