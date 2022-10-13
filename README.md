@@ -81,135 +81,15 @@ from sqlalchemy import create_engine
 	This stage is to model and predict using the logistic regression.
 	We used following to create a model to predict the stcok prices;
 
+For the modeling phase of the forecasting process, we found a limited number of tools available. A few forecasting packages in R were avaible for use to us specifically 
+	-CausalImpact 
+	-AnomalyDetection 
 
-	#Stock market anakysis using previous year data as well as twitter sentiment anlysis to predict htisyears stock market data
+but facebook Prophet was used as a replacement for the forecast package because of two main advantages it offered us:
 
-#### Data to be predicted using logistic reg
+1) Prophet makes it much more straightforward to create a reasonable, accurate forecast. The forecast package includes many different forecasting techniques (ARIMA, exponential smoothing, etc), each with their own strengths, weaknesses, and tuning parameters. Gviing us the best model over hte first itteration allowing us to skip testing different models as it is unlikely that even experienced analysts can choose the correct model and parameters efficiently given this array of choices.
 
-- open price
-
-- close price
-
-- volume traded
-
-- High
-
-- Low
-
-
-#### systems and installs in use or planed fr production (add to list aswe move)
-
-
-- Pthon
-
-- pandas
-
-- numpy
-
-- tweepy
-
-- ix_yahoo_finance
-
-- scikit_learn
-
-- maplotlib
-
-
-
-#### Modelling behviour
-
-
-##### We have pulled the values for variables:
-
-- open price
-
-- close price
-
-- volume traded
-
-- High
-
-
-
-linear reg needs a forecast column to predict our close price - assume close   price is our forecasted output
-
-if the basic formula of a linear reg. is as follows: y = B0 + B1*x1 + B2*x2 + B3*x3 + m
-
-we plan to implement a ML algo that takes :
-
-- open price
-
-- close price
-
-- volume traded
-
-- High
-
-- setiment analysis variable
-
-
-
-to predict the close price such that x1, x2, x3, x4 are the pulled variables
-
-y is the close price that is to be predicted (i.e. future close price)
-
-B is the constant term
-
-m is the error term
-
-
-#### why did we choose linear reg?
-
-linear reg was chosen as we have continuous tabulated data will be pulled, over the time frame for a year, a daily instance of every variable is expected to be present
-
-we may possibly adjust to a non linear reg upon seeing plotted data points
-this may optimize our model to increase accuracy of predictibility
-
-ADDITIONAL OPTIMIZATION: the addition or removal of terms to increase the accuracy of predictability
-
-
-
-#### How will results be interpreted?
-
-results will be interpreted using r^2 and adj. r^2 values to determine accuracy of prediction
-
-##### the Result :
-Model Coefficients: [[0.85468578]]
-Mean Absolute Error: 3.5018774676915005
-Coefficient of Determination: 0.883196544620627
-
-
-#### Why did we chose the associated variables?
-
-the associated variables are the most commonly talked about and used metrics when dealing with stock market data and predicting stock market data
-
-furhter investigation will be done into more relavent variables that can be used but this will be a good base to launch off of
-
-
-
-#### Time window for prediction?
-
- as we are using data consolidated from previous year it makes sense to predict movents of stock price either over the next yer from the date of query or till the end of the current year
-
-
-
-#### Feature engineering
-
-
-#### Data Preprocessing
-
-will need to perprocess data
-
-split into X-train/test and Y-Train/Test where X-values will be OG close price?
-
-#Split data into testing and training sets
-X_train, X_test, y_train, y_test = train_test_split(df[['Close']], df[['EMA_10']], test_size=.2)
-
-
-
-
-#### Apply linear reg algo to dataset and then plot using matpotlib to see results
-
+2) Prophet forecasts are customizable in ways that are intuitive to non-experts. There are smoothing parameters for seasonality that allow you to adjust how closely to fit historical cycles, as well as smoothing parameters for trends that allow you to adjust how aggressively to follow historical trend changes. For growth curves, you can manually specify “capacities” or the upper limit of the growth curve, allowing you to inject your own prior information about how your forecast will grow (or decline). Finally, you can specify irregular holidays to model like the dates of the Super Bowl, Thanksgiving and Black Friday.
 
 
 NOTE:
