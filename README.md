@@ -1,4 +1,4 @@
-# capstone
+# Capstone
 ## Stock Market FOrecast
 ## Project Overview 
 ### <ins>Background</ins> 
