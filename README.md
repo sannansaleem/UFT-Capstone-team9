@@ -3,32 +3,32 @@
 ## Project Overview 
 ### <ins>Background</ins> 
 
-The following project aims to use stock market data previously collected that was available using microsoft excelt services and compiled togeter as a data frame over the past year from when the project was initially founded. Using facebooks' Prpphet alrorythm developped in python that utilizes an additive regression model, we aim to predict the movement of stocks of close price 182 days in to the future. 
+The following project aims to use previously collected stock market data in Microsoft Excel. It was compiled as a data frame using data spanning the past year. Using Facebook Prophet's algorithm developed in python that utilizes an additive regression model, we predicted the movement of stocks of close price 182 days in to the future.
 
-The purpose of the project is to be able to provide traders with insightful information based on past seasonal trends so that data informed decisions can be made and carried out in an environment as unstable as the stock market.
+The purpose of the project is to provide traders with insightful information based on past seasonal trends so that data informed decisions can be made and carried out in the unstable stock market environment.
 
 ## An overview of the process flow in regards to the data portion of our project is as follows:
 
 ### Data Collection
 
-For this purpose, we are collectinng and normalizing stock data for the the database so it can be used in our machine learning mdodel. in order to do this, we are obtaining data microsoft excel's stock history function, cleaning the data in python using numpy and pandas and outputting it as csv files, and using postgresql to create tables for cleane CVSs for or AWS data base.  
-Our data base cnfiguration has takes steps as subsequently;
+For this purpose, we collected and normalized stock data for the database to use in our machine learning model. In order to do accomplish this, we obtained data through Microsoft Excel's stock history function, cleaned it with Python using Numpy and Pandas and output it as csv files, and used postgreSQL to create cleaned dataframes for our AWS database.
+
+The steps taken towards this database configuration are as follows:
 
 #### <ins>Base Database Configuration</ins>
-once our data was stored and accumulated over MS excel, we were able to trore within a pandas dataframe and use amazon webservices to create an AWS RDS instance along with S3 buckets to store our information over a cloud SAAS in the following manner:
-
+Once our data was stored and accumulated over MS Excel, we were able to store it within a pandas dataframe and use amazon webservices to create an AWS RDS instance along with S3 buckets to store our information over a cloud SAAS in the following manner:
 
 - Created AWS Relational Database instance.
 - Configured inbound rules for connection.
-- Confirmed pgSQL (pgAdmin) connection to the server. 
-- Created S3 buckets to hold data. 
+- Confirmed pgSQL (pgAdmin) connection to the server.
+- Created S3 buckets to hold data.
 - Configured buckets to be publicly accessible.
 - Uploaded data to buckets.
-- Created Tables within Database. 
+- Created Tables within Database.
 - Attempted to classify Record/Variables for Stock Data.
-- Installed Apache Spark & PySpark. 
+- Installed Apache Spark & PySpark.
 - Extracted data from S3 buckets in Amazon
-- Came across errors. 
+- Came across errors.
 - Attempted manual import of data into tables. Did not work as expected.
 - Determined tables value types causing error for import.
 
@@ -61,29 +61,24 @@ Database ERD
 
 ### <ins>Data Preprocessing</ins>
 
-Stock market data is collected from microsoft excel's stockhistory function, saved as a csv, and read into a notebook as a pandas dataframe to be formatted for importing as sql tables.
-The stock market data did not have any missing values to drop, but some columns did need to have their types coerced to be uploaded to the sql database.
-The stock market data has been normalized into two tables, splitting dollar values like open, close, high, and low, from the volume traded.
-Normalized data was imported into sql tables and into aws.
+Stock market data was collected from Microsoft Excel's stockhistory function, saved as a csv, and read into a notebook as a pandas dataframe to be formatted for importing as sql tables. The stock market data did not have any missing/null values to drop, but some columns required that their type be altered to be uploaded to the sql database. The stock market data was normalized into two tables, splitting dollar values like open, close, high, and low, from the volume traded. Normalized data was imported into sql tables and into aws.
 
-As Facebook Prophet automatically selects changepoints to perform its analysis, and additive regression models like facebook prophet use a one-dimensional smoother and backfitting, there was no need to split data into training and testing sets.
-One stock is chosen for analysis, in this case AAPL, and additional preprocessing is done to format the data for the facebook prophet model by creating a new dataframe that includes only the dates and close prices for the last year.	
-	
+Since, Facebook Prophet automatically selects changepoints to perform its analysis, and additive regression models like Facebook Prophet use a one-dimensional smoother and backfitting, there was no need to split data into training and testing sets. One stock was chosen for analysis, in this case AAPL, and additional preprocessing was conducted to format the data for the model by creating a new dataframe that specifically and exclusively included the dates and close prices for the past 1 year.	
 	
 	
 ## Creating the Prediction Model
 	This stage is to model and predict using the logistic regression.
 	We used following to create a model to predict the stcok prices;
 
-For the modeling phase of the forecasting process, we found a limited number of tools available. A few forecasting packages in R were avaible for use to us specifically 
+For the modeling phase of the forecasting process, we found there to be a limited number of tools available. Certain forecasting packages in R were available for us to use, namely 
 	- CausalImpact 
-	- AnomalyDetection 
+	- AnomalyDetection.
 
-but facebook Prophet was used as a replacement for the forecast package because of two main advantages it offered us:
+However, Facebook Prophet was used as a replacement for the forecast package owing to the two main advantages it offered:
 
-1) Prophet makes it much more straightforward to create a reasonable, accurate forecast. The forecast package includes many different forecasting techniques (ARIMA, exponential smoothing, etc), each with their own strengths, weaknesses, and tuning parameters. Gviing us the best model over hte first itteration allowing us to skip testing different models as it is unlikely that even experienced analysts can choose the correct model and parameters efficiently given this array of choices.
+Facebook Prophet makes it far more straightforward to create a reasonable, accurate forecast. The forecast package includes many different forecasting techniques (ARIMA, exponential smoothing, etc), each with their own strengths, weaknesses, and tuning parameters. Giving us the best model over the first iteration, allowing us to skip testing different models as it is unlikely that even experienced analysts can choose the correct model and parameters efficiently given this array of choices.
 
-2) Prophet forecasts are customizable in ways that are intuitive to non-experts. There are smoothing parameters for seasonality that allow you to adjust how closely to fit historical cycles, as well as smoothing parameters for trends that allow you to adjust how aggressively to follow historical trend changes. For growth curves, you can manually specify “capacities” or the upper limit of the growth curve, allowing you to inject your own prior information about how your forecast will grow (or decline). Finally, you can specify irregular holidays to model like the dates of the Super Bowl, Thanksgiving and Black Friday.
+Prophet forecasts are customizable in ways that are intuitive to non-experts. There are smoothing parameters for seasonality that allow you to adjust how closely to fit historical cycles, as well as smoothing parameters for trends that allow you to adjust how aggressively to follow historical trend changes. For growth curves, you can manually specify “capacities” or the upper limit of the growth curve, allowing you to inject your own prior information about how your forecast will grow (or decline). Finally, you can specify irregular holidays to model for instance for the Super Bowl, Thanksgiving and Black Friday.
 
 
 NOTE:
