@@ -29,21 +29,33 @@ Our data base cnfiguration has takes steps as subsequently;
 - Came across errors. 
 - Attempted manual import of data into tables. Did not work as expected.
 - Determined tables value types causing error for import.
-	
+
+<p align="center">
+
 (Figure 1) 
 :------------------------------------------:|	
 ![](https://github.com/sannansaleem/capstone/blob/main/Database%20Configuration/Tables%20within%20Database.png)
 SQL Tables
+
+</p>
+
+<p align="center">
 
 (Figure 2) | (Figure 3)
 :------------------------------------------:| :-------------------------------------:	
 ![](https://github.com/sannansaleem/capstone/blob/main/Database%20Configuration/Active%20RDS%20Instance.png) | ![](https://github.com/sannansaleem/capstone/blob/main/Database%20Configuration/RDS%20Database%20Instance-TickerDB%20.png)
 Active RDS Instace.  | RDS Database Instace-TickerDB..
 
+</p>
+
+<p align="center">
+
 (Figure 4) 
 :------------------------------------------:|	
 ![](https://github.com/sannansaleem/capstone/blob/main/Images/TwitterERD.png)
 Database ERD
+
+</p>
 
 ### <ins>Data Preprocessig</ins>
 
@@ -222,9 +234,6 @@ PLEASE REFER to Machine_Learning-FBProphet.ipynb
 :------------------------------------------:|	
 ![image](https://user-images.githubusercontent.com/104602949/194448691-99e67c35-93cc-460d-8191-e8c0cc4bb24b.png)
 
-
-
-#### check config.py file
 
 ## Dashboard
 https://public.tableau.com/app/profile/chris5384/viz/CapstoneDashboard_16650973748950/Dashboard1?publish=yes
