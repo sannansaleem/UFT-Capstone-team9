@@ -15,6 +15,8 @@ For this purpose, we are collectinng and normalizing stock data for the the data
 Our data base cnfiguration has takes steps as subsequently;
 
 #### <ins>Base Database Configuration</ins>
+once our data was stored and accumulated over MS excel, we were able to trore within a pandas dataframe and use amazon webservices to create an AWS RDS instance along with S3 buckets to store our information over a cloud SAAS in the following manner:
+
 
 - Created AWS Relational Database instance.
 - Configured inbound rules for connection.
