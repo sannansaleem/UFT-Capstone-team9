@@ -1,5 +1,5 @@
 # Capstone
-## Stock Market FOrecast
+## Stock Market Forecast
 ## Project Overview 
 ### <ins>Background</ins> 
 
@@ -76,15 +76,10 @@ For the modeling phase of the forecasting process, we found there to be a limite
 
 However, Facebook Prophet was used as a replacement for the forecast package owing to the two main advantages it offered:
 
-Facebook Prophet makes it far more straightforward to create a reasonable, accurate forecast. The forecast package includes many different forecasting techniques (ARIMA, exponential smoothing, etc), each with their own strengths, weaknesses, and tuning parameters. Giving us the best model over the first iteration, allowing us to skip testing different models as it is unlikely that even experienced analysts can choose the correct model and parameters efficiently given this array of choices.
+1) Facebook Prophet makes it far more straightforward to create a reasonable, accurate forecast. The forecast package includes many different forecasting techniques (ARIMA, exponential smoothing, etc), each with their own strengths, weaknesses, and tuning parameters. Giving us the best model over the first iteration, allowing us to skip testing different models as it is unlikely that even experienced analysts can choose the correct model and parameters efficiently given this array of choices.
 
-Prophet forecasts are customizable in ways that are intuitive to non-experts. There are smoothing parameters for seasonality that allow you to adjust how closely to fit historical cycles, as well as smoothing parameters for trends that allow you to adjust how aggressively to follow historical trend changes. For growth curves, you can manually specify “capacities” or the upper limit of the growth curve, allowing you to inject your own prior information about how your forecast will grow (or decline). Finally, you can specify irregular holidays to model for instance for the Super Bowl, Thanksgiving and Black Friday.
+2) Prophet forecasts are customizable in ways that are intuitive to non-experts. There are smoothing parameters for seasonality that allow you to adjust how closely to fit historical cycles, as well as smoothing parameters for trends that allow you to adjust how aggressively to follow historical trend changes. For growth curves, you can manually specify “capacities” or the upper limit of the growth curve, allowing you to inject your own prior information about how your forecast will grow (or decline). Finally, you can specify irregular holidays to model for instance for the Super Bowl, Thanksgiving and Black Friday.
 
-
-NOTE:
-~Added changes 10\06\22
-- Difficulty with running ARIMA modeling to predict the outcomes.
-- Added in Facebook Prophet Library to formulate a predictive algorithm.
 
 PLEASE REFER to Machine_Learning-FBProphet.ipynb
 
