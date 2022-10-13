@@ -7,7 +7,7 @@ The following project aims to use stock market data previously collected that wa
 
 The purpose of the project is to be able to provide traders with insightful information based on past seasonal trends so that data informed decisions can be made and carried out in an environment as unstable as the stock market.
 
-## An overview of the process flow of our project is as follows:
+## An overview of the process flow in regards to the data portion of our project is as follows:
 
 ### Data Collection
 
@@ -68,9 +68,8 @@ Stock prices data collected  lacks weekends and public holidays when the market 
 follows a concave function. Therefore, if the stock in a day is x and the next  is y with some missing. The first missing value is determined to be (y+x)/2 and the same metodology is used to determine the missing values.
 
 
-We used following for data preprocssing;
 
-#### <ins>import dependencies</ins>
+<ins>import dependencies</ins>
 import pandas as pd
 import numpy as np
 import pymysql
